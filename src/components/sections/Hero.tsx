@@ -20,14 +20,28 @@ export function Hero() {
             {PERSONAL_INFO.intro}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="h-14 px-8 text-lg font-semibold rounded-full group" asChild>
+            <Button
+              size="lg"
+              className="h-14 px-8 text-lg font-semibold rounded-full group"
+              asChild
+            >
               <a href="#projects">
                 View Projects
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="h-14 px-8 text-lg font-semibold rounded-full group" asChild>
-              <a href="#">
+            <Button
+              size="lg"
+              variant="outline"
+              className="h-14 px-8 text-lg font-semibold rounded-full group"
+              asChild
+            >
+              <a
+                href="/Harish's Resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Download Resume
                 <Download className="ml-2 h-5 w-5 opacity-70 group-hover:opacity-100" />
               </a>
@@ -35,7 +49,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      
+
       {/* Subtle background decoration */}
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-accent/20 rounded-full blur-3xl -z-10" />
       <div className="absolute top-1/4 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10" />
