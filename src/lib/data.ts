@@ -43,6 +43,14 @@ export const PROJECTS = [
     demoUrl: "https://weatherx-one.vercel.app",
     githubUrl: "https://github.com/code-blooded-developer/weatherx",
   },
+  {
+    title: "Minimal Cookie Guard",
+    description:
+      "A production-ready Chrome Extension that automatically rejects optional cookies and accepts only necessary cookies when visiting websites. Built with Manifest V3, Vite, React 18, and TypeScript.",
+    stack: ["React", "typeScript", "Vite", "Manifest V3"],
+    githubUrl:
+      "https://github.com/code-blooded-developer/cookie-guard-extension",
+  },
 ];
 
 export const SKILLS = [

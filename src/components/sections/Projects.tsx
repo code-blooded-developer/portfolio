@@ -61,15 +61,21 @@ export function Projects() {
                 </div>
               </CardContent>
               <CardFooter className="bg-white/50 border-t flex gap-4 p-8">
-                <Button
-                  variant="default"
-                  className="rounded-full shadow-lg shadow-primary/20 flex-1 sm:flex-none"
-                  asChild
-                >
-                  <a href={p.demoUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                  </a>
-                </Button>
+                {p.demoUrl && (
+                  <Button
+                    variant="default"
+                    className="rounded-full shadow-lg shadow-primary/20 flex-1 sm:flex-none"
+                    asChild
+                  >
+                    <a
+                      href={p.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                    </a>
+                  </Button>
+                )}
                 <Button
                   variant="outline"
                   className="rounded-full flex-1 sm:flex-none"
